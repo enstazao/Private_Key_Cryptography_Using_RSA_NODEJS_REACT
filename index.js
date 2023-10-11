@@ -77,7 +77,7 @@ app.post('/double-encrypt-message', (req, res) => {
 
     // Compose email options
     const mailOptions = {
-        from: 'p200165@pwr.nu.edu.pk', 
+        from: '', 
         to: email, 
         subject: 'Encrypted Message',
         text: doubleEncryptedMessage // Send the doubleEncryptedMessage as the email text

@@ -62,7 +62,7 @@ app.post('/send-encrypted-message', (req, res) => {
         const encryptedMessage = key.encrypt(messageBuffer, 'base64');
 
         const mailOptions = {
-            from: 'p200165@pwr.nu.edu.pk',
+            from: '',
             to: recipientEmail,
             subject: 'Encrypted Message',
             text: `You have received an encrypted message:\n\n${encryptedMessage}`
